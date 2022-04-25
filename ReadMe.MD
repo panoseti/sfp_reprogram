@@ -10,7 +10,7 @@
     Then select "Interface Options-->I5 I2C-->Yes!"  
 3. install wiringpi  
     ```
-        pip install wiringpi
+        sudo pip install wiringpi
     ```  
 4. run "FiberStore_SFP_Reprogram.py"  
     ```

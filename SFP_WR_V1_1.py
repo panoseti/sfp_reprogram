@@ -31,8 +31,8 @@ def SFP_Checksum(dev_addr):
     data = 0
     ds = wpi.wiringPiI2CSetup(dev_addr)
     for addr in range(0,63):
-	data = wpi.wiringPiI2CReadReg8(ds,addr)
-	sum = sum + data
+        data = wpi.wiringPiI2CReadReg8(ds,addr)
+        sum = sum + data
     checksum = sum&0xff
     print('checksum=0x%x'%(checksum))
     return (checksum)

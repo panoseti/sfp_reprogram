@@ -1,5 +1,5 @@
 #! /usr/bin/python
-from SFP_WR_V_1_1 import *
+from SFP_WR_V1_1 import *
 
 dev_addr = 0x50
 start_reg_addr = 0x28
@@ -16,6 +16,7 @@ print('0--PS-FB-TX1310(TX:1310nm)')
 print('1--PS-FB-RX1310(RX:1310nm)')
 print('2--Other')
 sfp_sel = input('Make your choice(0 or 1 or 2):')
+sfp_sel = int(sfp_sel)
 
 if sfp_sel == 0:
     SFP_PN = SFP0
