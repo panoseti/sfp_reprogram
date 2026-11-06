@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/env python3
 from SFP_WR_V1_1 import *
 
 dev_addr = 0x50
@@ -23,7 +23,7 @@ if sfp_sel == 0:
 elif sfp_sel == 1:
     SFP_PN = SFP1
 elif sfp_sel == 2:
-    SFP_PN = raw_input('Type in your Part Number:')
+    SFP_PN = input('Type in your Part Number:')
     print(SFP_PN)
 else:
     print('You made a mistake,so we will use a default value--0')
