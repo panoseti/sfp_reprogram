@@ -1,0 +1,10 @@
+# Local SFP unlock passwords from FS — NEVER commit (repo is public)
+sfp_passwords.txt
+*.local
+
+# EEPROM backups (contain per-module data; keep local)
+backup/
+
+# Python cache
+__pycache__/
+*.pyc
